@@ -12,8 +12,12 @@ var favFlo= prompt ("What's your favourit flower?")
 
 if (favFlo=='Calenduld'){document.write('<img src="./cal.jpg"/>');}
 else if (favFlo=='Diascia') {document.write('<img src="./dia.jpg"/>');}
-else {alert('Choose between Calenduld and Diascia');}
+else {confirm (alert('Choose between Calenduld and Diascia'));}
 
-
+function changeBackground (color) {
+    document.body.style.background = color;
+ }
+ 
+ window.addEventListener("load",function() { changeBackground('red') });
 
 
