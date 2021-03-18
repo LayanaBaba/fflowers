@@ -28,5 +28,5 @@ if (backgroungcolor == 'red') {
     document.body.style.backgroundColor = "blue";
 } else if (backgroungcolor == 'pink') {
     document.body.style.backgroundColor = "pink";
-}else if (backgroungcolor == 'blue') {
-        document.body.style.backgroundColor == "green"; }
+}else if (backgroungcolor == 'green') {
+    document.body.style.backgroundColor = "green"; }
