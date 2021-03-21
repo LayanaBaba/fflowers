@@ -2,19 +2,36 @@ var username= prompt ("what's your name?");
 document.write ('<h5>'+"Hello ",username+'</h5>')
 
 
-
+console.log(username);
 
 var love= prompt ("Do you love flowers?");
 if (love=='yes'){document.write('<h6>'+"That's Great"+'</h6>');}
 
 
-
+confirm (alert('Choose between Calenduld and Diascia'));
 
 var favFlo= prompt ("What's your favourit flower?");
 
-if (favFlo=='Calenduld'){document.write('<img src="./cal.jpg"/>');}
-else if (favFlo=='Diascia') {document.write('<img src="./dia.jpg"/>');}
-else {confirm (alert('Choose between Calenduld and Diascia'));}
+while (favFlo !== 'Calenduld' && favFlo !== 'Diascia'){favFlo = prompt ("Please only write Calenduld or Diascia");}
+
+
+
+var NumberOfPictures = prompt ("How many picture do you want?");
+
+var flower = '';
+var result = '';
+
+
+if (favFlo=='Calenduld'){flower = ('<img src="./cal.jpg"/> </br>');}
+else if (favFlo=='Diascia') {flower = ('<img src="./dia.jpg"/> </br>');}
+
+console.log(flower);
+
+for (var i=0; i<NumberOfPictures; i++){result += flower;}
+
+console.log(result);
+document.write(result);
+
 
 
 
