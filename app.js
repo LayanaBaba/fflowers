@@ -12,25 +12,46 @@ confirm (alert('Choose between Calenduld and Diascia'));
 
 var favFlo= prompt ("What's your favourit flower?");
 
-while (favFlo !== 'Calenduld' && favFlo !== 'Diascia'){favFlo = prompt ("Please only write Calenduld or Diascia");}
+var getFavFlo = function(){
+    while (favFlo !== 'Calenduld' && favFlo !== 'Diascia'){favFlo = prompt ("Please only write Calenduld or Diascia");}
+
+    
+}
+
+getFavFlo()
+
+
+var getNumberofpictures = function(){
+
+    var NumberOfPictures = prompt ("How many picture do you want?");
+
+    var flower = '';
+    var result = '';
+    
+    
+    if (favFlo=='Calenduld'){flower = ('<img src="./cal.jpg"/> </br>');}
+    else if (favFlo=='Diascia') {flower = ('<img src="./dia.jpg"/> </br>');}
+    
+    console.log(flower);
+    
+    for (var i=0; i<NumberOfPictures; i++){result += flower;}
+    
+    console.log(result);
+    return result
+
+}
 
 
 
-var NumberOfPictures = prompt ("How many picture do you want?");
-
-var flower = '';
-var result = '';
 
 
-if (favFlo=='Calenduld'){flower = ('<img src="./cal.jpg"/> </br>');}
-else if (favFlo=='Diascia') {flower = ('<img src="./dia.jpg"/> </br>');}
 
-console.log(flower);
 
-for (var i=0; i<NumberOfPictures; i++){result += flower;}
 
-console.log(result);
-document.write(result);
+
+
+
+
 
 
 
