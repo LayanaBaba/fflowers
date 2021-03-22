@@ -8,7 +8,7 @@ var love= prompt ("Do you love flowers?");
 if (love=='yes'){document.write('<h6>'+"That's Great"+'</h6>');}
 
 
-confirm (alert('Choose between Calenduld and Diascia'));
+//confirm (alert('Choose between Calenduld and Diascia'));
 
 var favFlo= prompt ("What's your favourit flower?");
 
@@ -40,6 +40,7 @@ var getNumberofpictures = function(){
     return result
 
 }
+document.write(getNumberofpictures());
 
 
 
@@ -55,16 +56,16 @@ var getNumberofpictures = function(){
 
 
 
+//var backgroungcolor = prompt("what's your favourite backgroundcolor(red,blue,pink or green) ?");
 
-var backgroungcolor = prompt("what's your favourite backgroundcolor(red,blue,pink or green) ?");
-
-if (backgroungcolor == 'red') {
-    document.body.style.backgroundColor = "red";
+//if (backgroungcolor == 'red') {
+   // document.body.style.backgroundColor = "red";
 
 
-} else if (backgroungcolor == 'blue') {
+/*} else if (backgroungcolor == 'blue') {
     document.body.style.backgroundColor = "blue";
 } else if (backgroungcolor == 'pink') {
     document.body.style.backgroundColor = "pink";
 }else if (backgroungcolor == 'green') {
     document.body.style.backgroundColor = "green"; }
+*/    
